@@ -3,7 +3,7 @@
 }
 
 html {
-    font-size: 43.75%;  /*16px — размер по-умолчанию, мы берем 43.75% = 7px*/
+    font-size: 7px;
 }
 
 @font-face {
