@@ -1,0 +1,207 @@
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @font-face {
+            font-family: "Raleway";
+            src: url("/fonts/raleway_3.0/Raleway-Light.ttf") format("opentype");
+            font-weight: 300;
+        }
+
+        @font-face {
+            font-family: "Raleway";
+            src: url("/fonts/raleway_3.0/Raleway-Medium.ttf") format("opentype");
+            font-weight: 500;
+        }
+
+        body {
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 24px;
+            color: #333333 background-position: -300px;
+            margin: 0 0 0 0;
+        }
+
+        .block {
+            background-color: white;
+            width: 936px;
+            margin: 0 auto;
+            padding-top: 24px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        h1 {
+            font-family: "Raleway", sans-serif;
+            font-size: 40px;
+            line-height: 48px;
+            font-weight: 500;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 24px;
+        }
+
+        .p {
+            margin: 0 0 8 0;
+            width: 447px;
+        }
+
+        .p--last {
+            margin-bottom: 0;
+        }
+
+        .back-button_p {
+            font-family: "Raleway", sans-serif;
+            font-size: 22px;
+            line-height: 32px;
+            font-weight: 300;
+            text-align: left;
+            margin-right: 10px;
+            margin-top: 0;
+        }
+
+        .back-button {
+            display: flex;
+            align-items: center;
+        }
+
+        .icon {
+            margin-right: 10px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .icon--last {
+            margin-right: 0;
+        }
+
+        span {
+            margin-right: 24px;
+        }
+
+        .icons {
+            height: 24px;
+        }
+
+        .contacts {
+            display: flex;
+            align-items: center;
+        }
+
+        .icon img {
+            transition: all 100ms ease-in-out;
+        }
+
+        .icon:hover img {
+            transform: scale(1.1);
+        }
+
+        .top-line {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 72px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .piece_img {
+            margin-bottom: 24px;
+            width: 936px;
+        }
+
+        .text-block {
+            margin-bottom: 40px;
+        }
+
+        .img--last {
+            margin-bottom: 0;
+        }
+
+        .piece_img img {
+            max-width: 100%;
+        }
+
+        .lines-leaf {
+            display: flex;
+            height: 40px;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 56px;
+            margin-bottom: 40px;
+        }
+
+        .leaf {
+            background-image: url("/img/leaf.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 40px;
+            width: 35px;
+        }
+
+        .green-line {
+            width: 442.5px;
+            height: 0.5px;
+            background-color: #55965B;
+        }
+
+        .up {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="block" id="top">
+        <section>
+            <div class="top-line">
+                <div class="back-button">
+                    <a class="back-button_p" href="/">←</a>
+                    <a class="back-button_p" href="/">Портфолио</a>
+                </div>
+                <div class="contacts">
+                    <span>aleand.niki@gmail.com</span>
+                    <div class="icons">
+                        <a class="icon" href="https://www.behance.net/aleandniki05c9">
+                            <img src="/img/behance.svg">
+                        </a>
+                        <a class="icon" href="https://www.instagram.com/sasha_firfirfir/">
+                            <img src="/img/instagram.svg">
+                        </a>
+                        <a class="icon icon--last" href="https://vk.com/yoruyomi">
+                            <img src="/img/vk.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-block">
+                <h1>«The Lighthouse»</h1>
+                <p class="p">Скоро я здесь что-нибудь напишу. Скоро я здесь что-нибудь напишу. Скоро я здесь что-нибудь
+                    напишу. Скоро я здесь что-нибудь напишу. Скоро я здесь что-нибудь напишу.</p>
+            </div>
+        </section>
+        <section>
+            <div class="piece_img img--last">
+                <a href="/img/piece6_1.jpg">
+                    <img src="/img/piece6_1.jpg" alt="">
+                </a>
+            </div>
+        </section>
+        <div class="lines-leaf">
+            <div class="green-line"></div>
+            <div class="leaf"></div>
+            <div class="green-line"></div>
+        </div>
+        <a class="up" href="#top">наверх</a>
+    </div>
+</body>
