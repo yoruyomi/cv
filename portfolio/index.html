@@ -1,343 +1,369 @@
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-<style>
-@font-face {
-    font-family: "Raleway";
-    src: url("/fonts/raleway_3.0/Raleway-Light.ttf") format("opentype");
-    font-weight: 300;
-}
+    <style>
+        @font-face {
+            font-family: "Raleway";
+            src: url("/fonts/raleway_3.0/Raleway-Light.ttf") format("opentype");
+            font-weight: 300;
+        }
 
-@font-face {
-    font-family: "Raleway";
-    src: url("/fonts/raleway_3.0/Raleway-Medium.ttf") format("opentype");
-    font-weight: 500;
-}
+        @font-face {
+            font-family: "Raleway";
+            src: url("/fonts/raleway_3.0/Raleway-Medium.ttf") format("opentype");
+            font-weight: 500;
+        }
 
-body {
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 24px;
-    color: #333333
-    background-position: -300px;
-    margin: 0 0 0 0;
-}
+        body {
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #333333;
+ background-position: -300px;
+            margin: 0 0 0 0;
+        }
 
-.block {
-    background-color: white;
-    width: 936px;
-    margin: 0 auto;
-    padding-top: 24px;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 40px;
-}
+        .block {
+            background-color: white;
+            width: 936px;
+            margin: 0 auto;
+            padding-top: 56px;
+            padding-left: 0;
+            padding-right: 0;
+            padding-bottom: 40px;
+        }
 
-h1 {
-    font-family: "Raleway", sans-serif;
-    font-size: 40px;
-    line-height: 48px;
-    font-weight: 500;
-    text-align: left;
-    margin-top: 0;
-    margin-bottom: 24px;
-}
+        h1 {
+            font-family: "Raleway", sans-serif;
+            font-size: 40px;
+            line-height: 48px;
+            font-weight: 500;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 32px;
+        }
 
-h2 { font-family: "Raleway", sans-serif;
-    font-size: 22px;
-    line-height: 32px;
-    font-weight: 300;
-    text-align: left;
-    margin-top: 0;
-    margin-bottom: 72px;
-}
+        h2 {
+            font-family: "Raleway", sans-serif;
+            font-size: 22px;
+            line-height: 32px;
+            font-weight: 300;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 72px;
+        }
 
-.p {
-    margin: 0 0 8 0;
-    width: 447px;
-}
-.p--last {
-    margin-bottom: 0;
-}
+        .p {
+            margin: 0 0 8 0;
+            width: 447px;
+        }
 
-.icon {
-    margin-right: 10px;
-    text-decoration: none;
-    display: inline-block;
-}
+        .p--last {
+            margin-bottom: 0;
+        }
 
-.icon--last {
-    margin-right: 24px;
-}
+        .icon {
+            margin-right: 10px;
+            text-decoration: none;
+            color: inherit;
+            display: inline-block;
+        }
 
-.icons {
-    height: 24px;
-}
+        .icon--last {
+            margin-right: 24px;
+        }
 
-.contacts {
-    margin-top: 72px;
-    display: flex;
-    align-items: center;
-}
+        .icons {
+            height: 24px;
+        }
 
-.icon img {
-    transition: all 100ms ease-in-out;
-}
+        .contacts {
+            margin-top: 72px;
+            display: flex;
+            align-items: center;
+        }
 
-.icon:hover img {
-    transform: scale(1.1);
-}
+        .icon img {
+            transition: all 100ms ease-in-out;
+        }
 
-.about {
-    display: flex;
-    justify-content: space-between;
-}
+        .icon:hover img {
+            transform: scale(1.1);
+        }
 
-.lines-leaf {
-    display: flex; 
-    height: 40px;
-    justify-content: space-between;
-    align-items: center;
-}
+        .about {
+            display: flex;
+            justify-content: space-between;
+        }
 
-.lines-leaf1 {
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
+        .lines-leaf {
+            display: flex;
+            height: 40px;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.lines-leaf2 {
-    margin-top: 8px;
-}
-.leaf {
-    background-image: url("/img/leaf.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 40px;
-    width: 35px;
-}
+        .lines-leaf1 {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
 
-.green-line {
-    width: 442.5px;
-    height: 0.5px;
-    background-color: #55965B;
-}
+        .lines-leaf2 {
+            margin-top: 8px;
+        }
 
-.works {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100%;
-    flex-wrap: wrap;
-}
+        .leaf {
+            background-image: url("/img/leaf.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 40px;
+            width: 35px;
+        }
 
-.piece_img {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 286px;
-    height: 240px;
-}
+        .green-line {
+            width: 442.5px;
+            height: 0.5px;
+            background-color: #55965B;
+        }
 
-.piece_text {
-    padding-left: 16px;
-}
+        .works {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 100%;
+            flex-wrap: wrap;
+        }
 
-.name {
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500;
-    text-align: left;
-    margin-top: 16px;
-    margin-bottom: 0;
-}
+        .piece_img {
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 286px;
+            height: 240px;
+            transition: box-shadow 200ms ease-in-out;
+        }
 
-.description {
-    font-family: 'Raleway', sans-serif;
-    font-size: 12px;
-    line-height: 24px;
-    font-weight: 300;
-    text-align: left;
-    margin-top: 0;
-    margin-bottom: 32px;
-}
+        .piece_img:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
 
-.piece_1_img {
-    background-image: url("/img/piece 1.jpg");
-}
+        .piece_text {
+            padding-left: 16px;
+        }
 
-.piece_2_img {
-    background-image: url("/img/piece 2.jpg");
-}
+        .name {
+            font-family: 'Raleway', sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+            text-align: left;
+            margin-top: 16px;
+            margin-bottom: 0;
+        }
 
-.piece_3_img {
-    background-image: url("/img/piece 3.jpg");
-}
+        .description {
+            font-family: 'Raleway', sans-serif;
+            font-size: 12px;
+            line-height: 24px;
+            font-weight: 300;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 32px;
+        }
 
-.piece_4_img {
-    background-image: url("/img/piece 4.jpg");
-}
+        .piece_1_img {
+            background-image: url("/img/piece 1.jpg");
+        }
 
-.piece_5_img {
-    background-image: url("/img/piece 5.jpg");
-}
+        .piece_2_img {
+            background-image: url("/img/piece 2.jpg");
+        }
 
-.piece_6_img {
-    background-image: url("/img/piece 6.jpg");
-}
+        .piece_3_img {
+            background-image: url("/img/piece 3.jpg");
+        }
 
-.piece_7_img {
-    background-image: url("/img/piece 7.jpg");
-}
+        .piece_4_img {
+            background-image: url("/img/piece 4.jpg");
+        }
 
-.piece_8_img {
-    background-image: url("/img/piece 8.jpg");
-}
+        .piece_5_img {
+            background-image: url("/img/piece 5.jpg");
+        }
 
-.piece_9_img {
-    background-image: url("/img/piece 9.jpg");
-}
+        .piece_6_img {
+            background-image: url("/img/piece 6.jpg");
+        }
 
-.photo {
-    width: 384px;
-    background-image: url(/img/me.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
+        .piece_7_img {
+            background-image: url("/img/piece 7.jpg");
+        }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
+        .piece_8_img {
+            background-image: url("/img/piece 8.jpg");
+        }
+
+        .piece_9_img {
+            background-image: url("/img/piece 9.jpg");
+        }
+
+        .photo {
+            width: 384px;
+            background-image: url(/img/me.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+
+        .mail {
+            font-family: "Raleway", sans-serif;
+            font-weight: 500;
+            color: #333333;
+
+        }
+
+        .a_piece {
+            text-decoration: none;
+            color: inherit;
+        }
+        .back-button_arrow { 
+            font-weight: 600;
+            margin-right: 10px;
+        }
 </style>
 </head>
 
 <body>
-<div class="block">
-    <section>
-        <div class="about">
-            <div class="info">
-                <h2>Портфолио</h2>
-                <h1>Александра Хомутенко</h1>
-                <p class="p">Начинающий дизайнер из Томска, 21 год. Прохожу обучение в школе дизайнеров Бюро Горбунова. Рисую в диджитал и на бумаге, на предметах и на стенах.</p>
-                <p class="p p--last">Люблю улучшать пространство вокруг себя. Делать все логичным, удобным и красивым. Хочу перенести эту любовь в цифровое пространство :)</p>
-                
-                <div class="contacts">
-                    <div class="icons">
-                        <a class="icon" href="https://www.behance.net/aleandniki05c9">
-                            <img src="/img/behance.svg">
-                        </a>
-                        <a class="icon" href="https://www.instagram.com/sasha_firfirfir/">
-                            <img src="/img/instagram.svg">
-                        </a>
-                        <a class="icon icon--last" href="https://vk.com/yoruyomi">
-                            <img src="/img/vk.svg">
-                        </a>
+    <div class="block">
+        <section>
+            <div class="about">
+                <div class="info">
+                    <h1>Александра Хомутенко</h1>
+                    <p class="p">Начинающий дизайнер из Томска, 21 год. Прохожу обучение в школе дизайнеров Бюро
+                        Горбунова. Рисую на бумаге, на предметах и на стенах.</p>
+                    <p class="p">Люблю улучшать пространство вокруг себя. Делать все логичным, удобным и красивым. Хочу
+                        перенести эту любовь в цифровое пространство :)</p>
+                    <p class="p p--last">Пока у меня мало реализованных коммерческих проектов, поэтому здесь
+                        представлены разные работы по учебе и личные проекты, связанные с дизайном, иллюстрацией и
+                        копирайтингом.</p>
+                    <div class="contacts">
+                        <div class="icons">
+                            <a class="icon" href="https://www.behance.net/aleandniki05c9">
+                                <img src="/img/behance.svg">
+                            </a>
+                            <a class="icon" href="https://www.instagram.com/sasha_firfirfir/">
+                                <img src="/img/instagram.svg">
+                            </a>
+                            <a class="icon icon--last" href="https://vk.com/yoruyomi">
+                                <img src="/img/vk.svg">
+                            </a>
+                        </div>
+                        <a class="mail" href="mailto:aleand.niki@gmail.com">aleand.niki@gmail.com</a>
                     </div>
-                    <span>aleand.niki@gmail.com</span>
                 </div>
+                <div class="photo"></div>
             </div>
-            <div class="photo"></div>
+        </section>
+        <div class="lines-leaf lines-leaf1">
+            <div class="green-line"></div>
+            <div class="leaf"></div>
+            <div class="green-line"></div>
         </div>
-    </section>
-    <div class="lines-leaf lines-leaf1">
-        <div class="green-line"></div>
-        <div class="leaf"></div>
-        <div class="green-line"></div>
-    </div> 
-    <div class="works">
-        <div class="piece_1">
-            <a href="pages/1.html">
-                <div class="piece_img piece_1_img"></div>
-                <div class="piece_text">
-                    <p class="name">Резюме</p>
-                    <p class="description">Дизайн + html-верстка</p>
-                </div>
-            </a>
+        <div class="works">
+            <div class="piece_1">
+                <a class="a_piece" href="pages/1.html">
+                    <div class="piece_img piece_1_img"></div>
+                    <div class="piece_text">
+                        <p class="name">Резюме</p>
+                        <p class="description">Дизайн и html-верстка</p>
+                    </div>
+                </a>
+            </div>
+            <div class="piece_2">
+                <a class="a_piece" href="pages/2.html">
+                    <div class="piece_img piece_2_img"></div>
+                    <div class="piece_text">
+                        <p class="name">Буклет о компании</p>
+                        <p class="description">Дизайн и копирайтинг</p>
+                    </div>
+                </a>
+            </div>
+            <div class="piece_3">
+                <a class="a_piece" href="pages/3.html">
+                    <div class="piece_img piece_3_img"></div>
+                    <div class="piece_text">
+                        <p class="name">Афиша чайного чемпионата</p>
+                        <p class="description">Дизайн и копирайтинг</p>
+                    </div>
+                </a>
+            </div>
+            <div class="piece_4">
+                <a class="a_piece" href="pages/4.html">
+                    <div class="piece_img piece_4_img"></div>
+                    <div class="piece_text">
+                        <p class="name">«Follow the dancing girl»</p>
+                        <p class="description">Иллюстрация </p>
+                    </div>
+                </a>
+            </div>
+            <div class="piece_5">
+                <a class="a_piece" href="pages/5.html">
+                    <div class="piece_img piece_5_img"></div>
+                    <div class="piece_text">
+                        <p class="name">«Dancing in the dawn»</p>
+                        <p class="description">Живопись, акрил</p>
+                    </div>
+                </a>
+            </div>
+            <div class="piece_6">
+                <a class="a_piece" href="pages/6.html">
+                    <div class="piece_img piece_6_img"></div>
+                    <div class="piece_text">
+                        <p class="name">«The Lighthouse»</p>
+                        <p class="description">Иллюстрация </p>
+                    </div>
+                </a>
+            </div>
+            <div class="piece_7">
+                <a class="a_piece" href="pages/7.html">
+                    <div class="piece_img piece_7_img"></div>
+                    <div class="piece_text">
+                        <p class="name">«Childhood»</p>
+                        <p class="description">Иллюстрация </p>
+                    </div>
+                </a>
+            </div>
+            <div class="piece_8">
+                <a class="a_piece" href="pages/8.html">
+                    <div class="piece_img piece_8_img"></div>
+                    <div class="piece_text">
+                        <p class="name">Новогодние открытки</p>
+                        <p class="description">Иллюстрация </p>
+                    </div>
+                </a>
+            </div>
+            <div class="piece_9">
+                <a class="a_piece" href="pages/9.html">
+                    <div class="piece_img piece_9_img"></div>
+                    <div class="piece_text">
+                        <p class="name">«Winstone 9»</p>
+                        <p class="description">Иллюстрация </p>
+                    </div>
+                </a>
+            </div>
         </div>
-        <div class="piece_2">
-            <a href="pages/2.html">
-                <div class="piece_img piece_2_img"></div>
-                <div class="piece_text">
-                    <p class="name">Буклет о компании</p>
-                    <p class="description">Дизайн + копирайтинг</p>
-                </div>
-            </a>    
-        </div>
-        <div class="piece_3">
-            <a href="pages/3.html">
-                <div class="piece_img piece_3_img"></div>
-                <div class="piece_text">
-                    <p class="name">Афиша чайного чемпионата</p>
-                    <p class="description">Дизайн + копирайтинг</p>
-                </div>
-            </a> 
-        </div>
-        <div class="piece_4">
-            <a href="pages/4.html">
-                <div class="piece_img piece_4_img"></div>
-                <div class="piece_text">
-                    <p class="name">«Follow the dancing girl»</p>
-                    <p class="description">Иллюстрация в диджитал</p>
-                </div>
-            </a>
-        </div>
-        <div class="piece_5">
-            <a href="pages/5.html">
-                <div class="piece_img piece_5_img"></div>
-                <div class="piece_text">
-                    <p class="name">«Dancing in the dawn»</p>
-                    <p class="description">Живопись, акрил</p>
-                </div>
-            </a>
-        </div>
-        <div class="piece_6">
-            <a href="pages/6.html">
-                <div class="piece_img piece_6_img"></div>
-                <div class="piece_text">
-                    <p class="name">«The Lighthouse»</p>
-                    <p class="description">Иллюстрация в диджитал</p>
-                </div>
-            </a>
-        </div>
-        <div class="piece_7">
-            <a href="pages/7.html">
-                <div class="piece_img piece_7_img"></div>
-                <div class="piece_text">
-                    <p class="name">«Childhood»</p>
-                    <p class="description">Иллюстрация в диджитал</p>
-                </div>
-            </a>
-        </div>
-        <div class="piece_8">
-            <a href="pages/8.html">
-                <div class="piece_img piece_8_img"></div>
-                <div class="piece_text">
-                    <p class="name">Новогодние открытки</p>
-                    <p class="description">Иллюстрация в диджитал</p>
-                </div>
-            </a>
-        </div>
-        <div class="piece_9">
-            <a href="pages/9.html">
-                <div class="piece_img piece_9_img"></div>
-                <div class="piece_text">
-                    <p class="name">«Winstone 9»</p>
-                    <p class="description">Иллюстрация в диджитал</p>
-                </div>
-            </a>
+        <div class="lines-leaf lines-leaf2">
+            <div class="green-line"></div>
+            <div class="leaf"></div>
+            <div class="green-line"></div>
         </div>
     </div>
-    <div class="lines-leaf lines-leaf2">
-        <div class="green-line"></div>
-        <div class="leaf"></div>
-        <div class="green-line"></div>
-    </div>
-</div>
 </body>
+
 </html>
